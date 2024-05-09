@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Emp_travel_booking_systemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="admins">
+    <Key>
+      <PropertyRef Name="adminid" />
+    </Key>
+    <Property Name="adminid" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="admin_password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="approvals">
+    <Key>
+      <PropertyRef Name="approvalid" />
+    </Key>
+    <Property Name="approvalid" Type="int" Nullable="false" />
+    <Property Name="requestid" Type="int" />
+    <Property Name="managerid" Type="int" />
+    <Property Name="approvalstatus" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="bookingstatus">
+    <Key>
+      <PropertyRef Name="bookingid" />
+    </Key>
+    <Property Name="bookingid" Type="int" Nullable="false" />
+    <Property Name="requestid" Type="int" />
+    <Property Name="agentid" Type="int" />
+    <Property Name="status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="employees">
+    <Key>
+      <PropertyRef Name="employeeid" />
+    </Key>
+    <Property Name="employeeid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emp_name" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="emp_password" Type="varchar" MaxLength="50" />
+    <Property Name="department" Type="varchar" MaxLength="50" />
+    <Property Name="position" Type="varchar" MaxLength="50" />
+    <Property Name="hiredate" Type="date" />
+    <Property Name="phonenumber" Type="varchar" MaxLength="20" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="managerid" Type="int" />
+  </EntityType>
+  <EntityType Name="managers">
+    <Key>
+      <PropertyRef Name="managerid" />
+    </Key>
+    <Property Name="managerid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="department" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="mgr_password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="travelagents">
+    <Key>
+      <PropertyRef Name="agentid" />
+    </Key>
+    <Property Name="agentid" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="travel_agent_password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="travelrequest">
+    <Key>
+      <PropertyRef Name="requestid" />
+    </Key>
+    <Property Name="requestid" Type="int" Nullable="false" />
+    <Property Name="employeefirstname" Type="varchar" MaxLength="100" />
+    <Property Name="employeelastname" Type="varchar" MaxLength="100" />
+    <Property Name="employeeemail" Type="varchar" MaxLength="100" />
+    <Property Name="employeeid" Type="int" />
+    <Property Name="reasonfortravel" Type="varchar" MaxLength="255" />
+    <Property Name="flightneeded" Type="bit" />
+    <Property Name="hotelneeded" Type="bit" />
+    <Property Name="departurecity" Type="varchar" MaxLength="100" />
+    <Property Name="arrivalcity" Type="varchar" MaxLength="100" />
+    <Property Name="departuredate" Type="date" />
+    <Property Name="departuretime" Type="time" Precision="7" />
+    <Property Name="additionalinformation" Type="text" />
+  </EntityType>
+  <Association Name="FK__approvals__manag__7E37BEF6">
+    <End Role="managers" Type="Self.managers" Multiplicity="0..1" />
+    <End Role="approvals" Type="Self.approvals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="managers">
+        <PropertyRef Name="managerid" />
+      </Principal>
+      <Dependent Role="approvals">
+        <PropertyRef Name="managerid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__approvals__reque__7D439ABD">
+    <End Role="travelrequest" Type="Self.travelrequest" Multiplicity="0..1" />
+    <End Role="approvals" Type="Self.approvals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="travelrequest">
+        <PropertyRef Name="requestid" />
+      </Principal>
+      <Dependent Role="approvals">
+        <PropertyRef Name="requestid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingst__agent__02FC7413">
+    <End Role="travelagents" Type="Self.travelagents" Multiplicity="0..1" />
+    <End Role="bookingstatus" Type="Self.bookingstatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="travelagents">
+        <PropertyRef Name="agentid" />
+      </Principal>
+      <Dependent Role="bookingstatus">
+        <PropertyRef Name="agentid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bookingst__reque__02084FDA">
+    <End Role="travelrequest" Type="Self.travelrequest" Multiplicity="0..1" />
+    <End Role="bookingstatus" Type="Self.bookingstatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="travelrequest">
+        <PropertyRef Name="requestid" />
+      </Principal>
+      <Dependent Role="bookingstatus">
+        <PropertyRef Name="requestid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__employees__manag__74AE54BC">
+    <End Role="managers" Type="Self.managers" Multiplicity="0..1" />
+    <End Role="employees" Type="Self.employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="managers">
+        <PropertyRef Name="managerid" />
+      </Principal>
+      <Dependent Role="employees">
+        <PropertyRef Name="managerid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__travelreq__emplo__797309D9">
+    <End Role="employees" Type="Self.employees" Multiplicity="0..1" />
+    <End Role="travelrequest" Type="Self.travelrequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employees">
+        <PropertyRef Name="employeeid" />
+      </Principal>
+      <Dependent Role="travelrequest">
+        <PropertyRef Name="employeeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Emp_travel_booking_systemModelStoreContainer">
+    <EntitySet Name="admins" EntityType="Self.admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="approvals" EntityType="Self.approvals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bookingstatus" EntityType="Self.bookingstatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employees" EntityType="Self.employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="managers" EntityType="Self.managers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="travelagents" EntityType="Self.travelagents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="travelrequest" EntityType="Self.travelrequest" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__approvals__manag__7E37BEF6" Association="Self.FK__approvals__manag__7E37BEF6">
+      <End Role="managers" EntitySet="managers" />
+      <End Role="approvals" EntitySet="approvals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__approvals__reque__7D439ABD" Association="Self.FK__approvals__reque__7D439ABD">
+      <End Role="travelrequest" EntitySet="travelrequest" />
+      <End Role="approvals" EntitySet="approvals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingst__agent__02FC7413" Association="Self.FK__bookingst__agent__02FC7413">
+      <End Role="travelagents" EntitySet="travelagents" />
+      <End Role="bookingstatus" EntitySet="bookingstatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bookingst__reque__02084FDA" Association="Self.FK__bookingst__reque__02084FDA">
+      <End Role="travelrequest" EntitySet="travelrequest" />
+      <End Role="bookingstatus" EntitySet="bookingstatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__employees__manag__74AE54BC" Association="Self.FK__employees__manag__74AE54BC">
+      <End Role="managers" EntitySet="managers" />
+      <End Role="employees" EntitySet="employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__travelreq__emplo__797309D9" Association="Self.FK__travelreq__emplo__797309D9">
+      <End Role="employees" EntitySet="employees" />
+      <End Role="travelrequest" EntitySet="travelrequest" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

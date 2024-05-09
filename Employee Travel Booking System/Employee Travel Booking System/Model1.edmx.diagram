@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2f7a1ad8cca24e12a7ebd28cb2380344" Name="Diagram1">
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.approval" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.bookingstatu" Width="1.5" PointX="7.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.employee" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.manager" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.travelagent" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.travelrequest" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__approvals__manag__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__approvals__reque__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__bookingst__agent__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__bookingst__reque__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__employees__manag__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__travelreq__emplo__797309D9" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

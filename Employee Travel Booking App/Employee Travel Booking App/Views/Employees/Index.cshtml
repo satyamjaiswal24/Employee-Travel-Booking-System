@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Employee_Travel_Booking_App.employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Employee List</h2>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Nunito, sans-serif;
+        }
+        .button-group{
+            display: flex;
+        }
+
+        .button-group .btn {
+            margin-right: 5px; /* Adjust as needed */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            @Html.ActionLink("Add Employee", "Create", null, new { @class = "btn btn-primary" })
+        </p>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th style="white-space: nowrap;">Employee Name</th>
+                        <th style="white-space: nowrap;">Employee ID</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th style="white-space: nowrap;">Hire Date</th>
+                        <th style="white-space: nowrap;">Phone Number</th>
+                        <th>Address</th>
+                        <th>Manager</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.employeeid)</td>
+                        <td>@Html.DisplayFor(modelItem => item.emp_name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.email)</td>
+                        <td>@Html.DisplayFor(modelItem => item.department)</td>
+                        <td style="white-space: nowrap;">@Html.DisplayFor(modelItem => item.position)</td>
+                        <td style="white-space: nowrap;">@(item.hiredate.HasValue ? item.hiredate.Value.ToString("dd-MM-yyyy") : "")</td>
+                        <td>@Html.DisplayFor(modelItem => item.phonenumber)</td>
+                        <td>@Html.DisplayFor(modelItem => item.address)</td>
+                        <td>@Html.DisplayFor(modelItem => item.manager.name)</td>
+                        <td>@(item.status == true ? "Active" : "Inactive")</td>
+
+                        <td>
+                            <div class="button-group">
+                                @Html.ActionLink("Edit", "Edit", new { id = item.employeeid }, new { @class = "btn btn-primary btn-sm" })
+                                @Html.ActionLink("Change Manager", "ChangeManager", new { id = item.employeeid }, new { @class = "btn btn-info btn-sm" })
+                                @if (item.status == true)
+                                {
+                                    @Html.ActionLink("Inactive", "Delete", new { id = item.employeeid }, new { @class = "btn btn-danger btn-sm" })
+                                }
+                                else
+                                {
+                                    @Html.ActionLink("Active", "Delete", new { id = item.employeeid }, new { @class = "btn btn-success btn-sm" })
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>

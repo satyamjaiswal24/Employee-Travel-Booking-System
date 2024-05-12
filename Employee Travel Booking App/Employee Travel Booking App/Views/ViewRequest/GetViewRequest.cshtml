@@ -1,0 +1,101 @@
+﻿@model IEnumerable<Employee_Travel_Booking_App.travelrequest>
+
+@{
+    ViewBag.Title = "GetViewRequest";
+}
+
+<h2>GetViewRequest</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.employeefirstname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employeelastname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employeeemail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reasonfortravel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.flightneeded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hotelneeded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.departurecity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.arrivalcity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.departuredate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.departuretime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.additionalinformation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.approvalstatus)
+        </th>
+      
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.employeefirstname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.employeelastname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.employeeemail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reasonfortravel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.flightneeded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hotelneeded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.departurecity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.arrivalcity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.departuredate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.departuretime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.additionalinformation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.approvalstatus)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.requestid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.requestid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.requestid })
+        </td>
+    </tr>
+}
+
+</table>

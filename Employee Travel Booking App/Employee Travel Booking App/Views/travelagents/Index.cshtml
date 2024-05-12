@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Employee_Travel_Booking_App.travelagent>
+
+@{
+    ViewBag.Title = "Travel Agents";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Nunito, sans-serif;
+        }
+
+        .button-group {
+            display: flex;
+        }
+
+            .button-group .btn {
+                margin-right: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Travel Agents</h2>
+        <p>
+            @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+        </p>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.email)</td>
+                    <td>@Html.DisplayFor(modelItem => item.travel_agent_password)</td>
+                    <td>@(item.status == true ? "Active" : "Inactive")</td>
+
+
+                    <td>
+                        <div class="button-group">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.agentid }, new { @class = "btn btn-primary btn-sm" })
+                            @Html.ActionLink("Details", "Details", new { id = item.agentid }, new { @class = "btn btn-info btn-sm" })
+                            @if (item.status == true)
+                            {
+                                @Html.ActionLink("Inactive", "Delete", new { id = item.agentid }, new { @class = "btn btn-danger btn-sm" })
+                            }
+                            else
+                            {
+                                @Html.ActionLink("Active", "Delete", new { id = item.agentid }, new { @class = "btn btn-success btn-sm" })
+                            }
+                        </div>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

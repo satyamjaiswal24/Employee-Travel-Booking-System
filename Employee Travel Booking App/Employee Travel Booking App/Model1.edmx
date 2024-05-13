@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="Emp_travel_booking_systemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Emp_travel_booking_systemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="admins">
           <Key>
             <PropertyRef Name="adminid" />
@@ -110,7 +110,8 @@
             <End Role="travelrequest" EntitySet="travelrequest" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Emp_travel_booking_systemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -150,8 +151,8 @@
           <Property Name="department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="mgr_password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="employees" Relationship="Self.FK__employees__manag__74AE54BC" FromRole="managers" ToRole="employees" />
           <Property Name="status" Type="Boolean" />
+          <NavigationProperty Name="employees" Relationship="Self.FK__employees__manag__74AE54BC" FromRole="managers" ToRole="employees" />
         </EntityType>
         <EntityType Name="travelagent">
           <Key>
@@ -208,7 +209,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Emp_travel_booking_system_Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Emp_travel_booking_Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="admins" EntityType="Self.admin" />
           <EntitySet Name="employees" EntityType="Self.employee" />
           <EntitySet Name="managers" EntityType="Self.manager" />
@@ -228,7 +229,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Emp_travel_booking_systemModelStoreContainer" CdmEntityContainer="Emp_travel_booking_system_Entities">
+        <EntityContainerMapping StorageEntityContainer="Emp_travel_booking_systemModelStoreContainer" CdmEntityContainer="Emp_travel_booking_Entities">
           <EntitySetMapping Name="admins">
             <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.admin">
               <MappingFragment StoreEntitySet="admins">
@@ -259,23 +260,23 @@
           <EntitySetMapping Name="managers">
             <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.manager">
               <MappingFragment StoreEntitySet="managers">
-                <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="managerid" ColumnName="managerid" />
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="department" ColumnName="department" />
                 <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="mgr_password" ColumnName="mgr_password" />
+                <ScalarProperty Name="status" ColumnName="status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="travelagents">
             <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.travelagent">
               <MappingFragment StoreEntitySet="travelagents">
-                <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="agentid" ColumnName="agentid" />
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="travel_agent_password" ColumnName="travel_agent_password" />
+                <ScalarProperty Name="status" ColumnName="status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

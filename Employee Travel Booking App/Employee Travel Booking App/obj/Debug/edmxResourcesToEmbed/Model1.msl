@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Emp_travel_booking_systemModelStoreContainer" CdmEntityContainer="Emp_travel_booking_system_Entities">
+  <EntityContainerMapping StorageEntityContainer="Emp_travel_booking_systemModelStoreContainer" CdmEntityContainer="Emp_travel_booking_Entities">
     <EntitySetMapping Name="admins">
       <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.admin">
         <MappingFragment StoreEntitySet="admins">
@@ -31,23 +31,23 @@
     <EntitySetMapping Name="managers">
       <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.manager">
         <MappingFragment StoreEntitySet="managers">
-          <ScalarProperty Name="status" ColumnName="status" />
           <ScalarProperty Name="managerid" ColumnName="managerid" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="department" ColumnName="department" />
           <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="mgr_password" ColumnName="mgr_password" />
+          <ScalarProperty Name="status" ColumnName="status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="travelagents">
       <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.travelagent">
         <MappingFragment StoreEntitySet="travelagents">
-          <ScalarProperty Name="status" ColumnName="status" />
           <ScalarProperty Name="agentid" ColumnName="agentid" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="travel_agent_password" ColumnName="travel_agent_password" />
+          <ScalarProperty Name="status" ColumnName="status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

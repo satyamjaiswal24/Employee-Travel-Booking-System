@@ -8,11 +8,11 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
 {
     public class ViewRequestController : Controller
     {
-        private readonly Emp_travel_booking_system_Entities db;
+        private readonly Emp_travel_booking_Entities db;
 
         public ViewRequestController()
         {
-            db = new Emp_travel_booking_system_Entities();
+            db = new Emp_travel_booking_Entities();
         }
         // GET: ViewRequest
         [HttpGet]

@@ -13,10 +13,10 @@ namespace Employee_Travel_Booking_App
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Emp_travel_booking_system_Entities : DbContext
+    public partial class Emp_travel_booking_Entities : DbContext
     {
-        public Emp_travel_booking_system_Entities()
-            : base("name=Emp_travel_booking_system_Entities")
+        public Emp_travel_booking_Entities()
+            : base("name=Emp_travel_booking_Entities")
         {
         }
     

@@ -4,10 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7942eeb8e8b74fa0ad3631c2d87f7110" Name="Diagram1">
+      <Diagram DiagramId="09f15ece56e3488ca20fb4f37594b4c3" Name="Diagram1">
         <EntityTypeShape EntityType="Emp_travel_booking_systemModel.admin" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Emp_travel_booking_systemModel.employee" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.manager" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.manager" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Emp_travel_booking_systemModel.travelagent" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Emp_travel_booking_systemModel.travelrequest" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="Emp_travel_booking_systemModel.FK__employees__manag__74AE54BC" ManuallyRouted="false" />

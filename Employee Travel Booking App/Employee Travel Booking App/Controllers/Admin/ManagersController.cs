@@ -13,7 +13,7 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
 {
     public class ManagersController : Controller
     {
-        private Emp_travel_booking_system_Entities db = new Emp_travel_booking_system_Entities();
+        private Emp_travel_booking_Entities db = new Emp_travel_booking_Entities();
 
         // GET: managers
         public async Task<ActionResult> Index()

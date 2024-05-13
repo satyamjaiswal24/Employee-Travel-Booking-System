@@ -8,11 +8,11 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
 {
     public class AdminLoginController : Controller
     {
-        private readonly Emp_travel_booking_system_Entities db; // Replace YourDbContext with your actual DbContext class
+        private readonly Emp_travel_booking_Entities db; // Replace YourDbContext with your actual DbContext class
 
         public AdminLoginController()
         {
-            db = new Emp_travel_booking_system_Entities(); // Initialize your DbContext
+            db = new Emp_travel_booking_Entities(); // Initialize your DbContext
         }
 
         [HttpGet]
@@ -33,11 +33,13 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
                 }
 
                 // Retrieve the admin by email
-                var admin = db.admins.FirstOrDefault(a => a.email == email);
+                var admin = db.admins.FirstOrDefault(a => a.email == email && a.admin_password == password);
 
                 // Validate admin existence and password
-                if (admin != null && VerifyPassword(password, admin.admin_password))
+                if (admin != null)
                 {
+                    Session["email"] = email;
+                    Session["password"] = password;
                     // Redirect to the dashboard controller
                     return RedirectToAction("Index", "AdminDashboard");
                 }

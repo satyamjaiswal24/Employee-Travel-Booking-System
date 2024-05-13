@@ -26,12 +26,12 @@
             margin-bottom: 30px;
         }
 
+        /* Body Section Styles */
         .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            text-decoration:none;
         }
 
         .feature-card {
@@ -42,11 +42,13 @@
             text-align: center;
             cursor: pointer; /* Make the cards clickable */
             transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none; /* Remove underline from feature cards */
         }
 
             .feature-card:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                text-decoration: none; /* Remove underline on hover */
             }
 
         .feature-icon {
@@ -93,6 +95,9 @@
             padding: 20px 0;
             text-align: center;
         }
+        a div{
+            text-decoration:none;
+        }
 
         .footer-links {
             margin-top: 20px;
@@ -105,7 +110,7 @@
             }
 
                 .footer-links a:hover {
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
     </style>
 </head>

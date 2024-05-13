@@ -1,36 +1,27 @@
 ﻿
 @{
     ViewBag.Title = "Index";
-    Layout = null; ;
 }
-
-<h2>Admin Dashboard</h2>
     
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom Styles */
-        body {
+        *{
+            margin:0;
+            padding:0;
+        }
+        .body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            margin: 0;
             font-family: Nunito, sans-serif;
-        }
-
-        .container {
-            flex: 1;
-            display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Nunito, sans-serif;
         }
 
         /* Adjusted Card Styles */
@@ -38,6 +29,7 @@
             width: 100%;
             max-width: 400px;
             border: none;
+            margin-top:30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -47,11 +39,8 @@
             color: #fff;
             font-weight: bold;
             border-radius: 10px 10px 0 0;
-        }
-
-        .card-body {
-            text-align: center;
-            padding: 20px;
+            padding-top:7px;
+            padding-bottom:7px;
         }
 
         .card-text {
@@ -80,48 +69,6 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Admin Dashboard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Admin
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAdmin">
-                            <a class="dropdown-item" href="#">Manage Employees</a>
-                            <a class="dropdown-item" href="#">Manage Managers</a>
-                            <a class="dropdown-item" href="#">Manage Travel Agents</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">View Reports</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRequests" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Requests
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownRequests">
-                            <a class="dropdown-item" href="#">View Requests</a>
-                            <a class="dropdown-item" href="#">Approve/Reject Requests</a>
-                            <a class="dropdown-item" href="#">Request Reports</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Manage Departments</a>
-                        </div>
-                    </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#">Login <span class="sr-only"></span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <div class="text-center mt-5">
         <h2>Welcome to Admin Dashboard</h2>
@@ -136,8 +83,8 @@
                     <div class="card-header">
                         Employee Management
                     </div>
-                    <div class="text-center mt-2" style="height:130px">
-                        <p class="fs-6">Manage employees, Assign Manager</p>
+                    <div class="text-center mt-2" style="height:130px; padding-top:19px;">
+                        <p style="padding-bottom:20px;" class="fs-6">Manage employees, Assign Manager</p>
                         <a href="@Url.Action("Index", "Employees")" class="btn btn-primary">Manage Employees</a>
                     </div>
                 </div>
@@ -147,9 +94,9 @@
                     <div class="card-header">
                         Travel Agents Management
                     </div>
-                    <div class="text-center mt-2" style="height:130px">
-                        <p class="fs-6">Add and Edit Travel Agents</p>
-                        <a href="@Url.Action("Index", "TravelAgents")" class="btn btn-primary">Manager Travel Agents</a>
+                    <div class="text-center mt-2" style="height: 130px; padding-top: 19px;">
+                        <p style="padding-bottom:20px;" class="fs-6">Add and Edit Travel Agents</p>
+                        <a  href="@Url.Action("Index", "TravelAgents")" class="btn btn-primary">Manager Travel Agents</a>
                     </div>
                 </div>
             </div>
@@ -158,8 +105,8 @@
                     <div class="card-header">
                         Manager Management
                     </div>
-                    <div class="text-center mt-2" style="height:130px">
-                        <p class="fs-6">Add, Edit and Soft delete Manager</p>
+                    <div class="text-center mt-2" style="height: 130px; padding-top: 19px;">
+                        <p style="padding-bottom:20px;"class="fs-6">Add, Edit and Soft delete Manager</p>
                         <a href="@Url.Action("Index", "Managers")" class="btn btn-primary">Manage Manager</a>
                     </div>
                 </div>
@@ -167,11 +114,7 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white py-3 mt-5">
-        <div class="">
-            <p>&copy; 2024 - Employee Travel Booking System</p>
-        </div>
-    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -65,6 +65,7 @@
     <Property Name="additionalinformation" Type="text" />
     <Property Name="approvalstatus" Type="varchar" MaxLength="50" />
     <Property Name="bookingstatus" Type="varchar" MaxLength="50" />
+    <Property Name="returnDate" Type="date" />
   </EntityType>
   <Association Name="FK__employees__manag__74AE54BC">
     <End Role="managers" Type="Self.managers" Multiplicity="0..1" />

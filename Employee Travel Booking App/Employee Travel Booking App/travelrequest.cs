@@ -29,6 +29,7 @@ namespace Employee_Travel_Booking_App
         public string additionalinformation { get; set; }
         public string approvalstatus { get; set; }
         public string bookingstatus { get; set; }
+        public Nullable<System.DateTime> returnDate { get; set; }
     
         public virtual employee employee { get; set; }
     }

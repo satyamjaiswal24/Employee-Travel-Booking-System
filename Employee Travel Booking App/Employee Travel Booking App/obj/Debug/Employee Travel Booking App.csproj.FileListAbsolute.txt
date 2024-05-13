@@ -87,8 +87,6 @@ D:\MY Project\Employee Travel Booking App\Employee Travel Booking App\bin\Entity
 D:\MY Project\Employee Travel Booking App\Employee Travel Booking App\bin\EntityFramework.SqlServer.dll
 D:\MY Project\Employee Travel Booking App\Employee Travel Booking App\bin\EntityFramework.xml
 D:\MY Project\Employee Travel Booking App\Employee Travel Booking App\bin\EntityFramework.SqlServer.xml
-D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\obj\Debug\Employee Travel Booking App.pdb
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\Employee Travel Booking App.dll.config
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\Employee Travel Booking App.dll
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\Employee Travel Booking App.pdb
@@ -99,6 +97,7 @@ D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\ros
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\csi.exe.config
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\csi.rsp
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
@@ -175,4 +174,5 @@ D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\bin\Mic
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\obj\Debug\Employee Travel Booking App.csproj.CoreCompileInputs.cache
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\obj\Debug\Employee Travel Booking App.csproj.CopyComplete
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\obj\Debug\Employee Travel Booking App.dll
+D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\obj\Debug\Employee Travel Booking App.pdb
 D:\Major Project\Employee Travel Booking App\Employee Travel Booking App\obj\Debug\Employee Travel Booking App.csproj.AssemblyReference.cache

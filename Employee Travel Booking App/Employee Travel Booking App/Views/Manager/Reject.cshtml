@@ -1,0 +1,29 @@
+﻿@model Emp_Travel_Booking_Sys.Models.travelRequest
+
+@{
+    ViewBag.Title = "Reject Request";
+}
+
+<h2>Reject Request</h2>
+
+<div class="container">
+    <h4>Are you sure you want to reject the following travel request?</h4>
+    <dl class="dl-horizontal">
+        <dt>Request ID</dt>
+        <dd>@Model.requestid</dd>
+        <dt>Employee Name</dt>
+        <dd>@(Model.employeefirstname + " " + Model.employeelastname)</dd>
+        <dt>Departure City</dt>
+        <dd>@Model.departurecity</dd>
+        <dt>Arrival City</dt>
+        <dd>@Model.arrivalcity</dd>
+        <dt>Departure Date</dt>
+        <dd>@Model.departuredate</dd>
+    </dl>
+    @using (Html.BeginForm("RejectConfirmed", "Manager", new { id = Model.requestid }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger">Confirm Reject</button>
+        <a href="@Url.Action("Requests", "Manager")" class="btn btn-default">Cancel</a>
+    }
+</div>

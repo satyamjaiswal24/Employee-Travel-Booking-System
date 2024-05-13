@@ -54,6 +54,7 @@
     <EntitySetMapping Name="travelrequests">
       <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.travelrequest">
         <MappingFragment StoreEntitySet="travelrequest">
+          <ScalarProperty Name="returnDate" ColumnName="returnDate" />
           <ScalarProperty Name="requestid" ColumnName="requestid" />
           <ScalarProperty Name="employeeid" ColumnName="employeeid" />
           <ScalarProperty Name="employeefirstname" ColumnName="employeefirstname" />

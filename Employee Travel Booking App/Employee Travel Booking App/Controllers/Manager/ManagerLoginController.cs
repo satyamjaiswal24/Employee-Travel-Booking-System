@@ -4,26 +4,26 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Employee_Travel_Booking_App.Controllers.Admin
+namespace Employee_Travel_Booking_App.Controllers.Manager
 {
-    public class AdminLoginController : Controller
+    public class ManagerLoginController : Controller
     {
-        private readonly Emp_travel_booking_Entities db; // Replace YourDbContext with your actual DbContext class
-
-        public AdminLoginController()
+        Emp_travel_booking_Entities db = new Emp_travel_booking_Entities();
+        public ActionResult Index()
         {
-            db = new Emp_travel_booking_Entities(); // Initialize your DbContext
+            return View();
         }
 
+
         [HttpGet]
-        public ActionResult Login()
+        public ActionResult ManagerLogin()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(string email, string password)
+        public ActionResult ManagerLogin(string email, string password)
         {
             try
             {
@@ -33,15 +33,16 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
                 }
 
                 // Retrieve the admin by email
-                var admin = db.admins.FirstOrDefault(a => a.email == email && a.admin_password == password);
+                var manager = db.managers.FirstOrDefault(a => a.email == email);
 
                 // Validate admin existence and password
-                if (admin != null)
+                if (manager != null)
                 {
+                    Session["ManagerId"] = manager.managerid;
                     Session["email"] = email;
                     Session["password"] = password;
                     // Redirect to the dashboard controller
-                    return RedirectToAction("Index", "AdminDashboard");
+                    return RedirectToAction("ManagerDashboard", "Manager");
                 }
                 else
                 {
@@ -54,7 +55,5 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
                 return View();
             }
         }
-
-
     }
 }

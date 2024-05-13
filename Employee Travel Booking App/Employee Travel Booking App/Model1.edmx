@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Emp_travel_booking_systemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Emp_travel_booking_systemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="admins">
           <Key>
             <PropertyRef Name="adminid" />
@@ -70,6 +70,7 @@
           <Property Name="additionalinformation" Type="text" />
           <Property Name="approvalstatus" Type="varchar" MaxLength="50" />
           <Property Name="bookingstatus" Type="varchar" MaxLength="50" />
+          <Property Name="returnDate" Type="date" />
         </EntityType>
         <Association Name="FK__employees__manag__74AE54BC">
           <End Role="managers" Type="Self.managers" Multiplicity="0..1" />
@@ -110,8 +111,7 @@
             <End Role="travelrequest" EntitySet="travelrequest" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Emp_travel_booking_systemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -184,6 +184,7 @@
           <Property Name="approvalstatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="bookingstatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="employee" Relationship="Self.FK__travelreq__emplo__2EDAF651" FromRole="travelrequest" ToRole="employees" />
+          <Property Name="returnDate" Type="DateTime" Precision="0" />
         </EntityType>
         <Association Name="FK__employees__manag__74AE54BC">
           <End Role="managers" Type="Self.manager" Multiplicity="0..1" />
@@ -283,6 +284,7 @@
           <EntitySetMapping Name="travelrequests">
             <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.travelrequest">
               <MappingFragment StoreEntitySet="travelrequest">
+                <ScalarProperty Name="returnDate" ColumnName="returnDate" />
                 <ScalarProperty Name="requestid" ColumnName="requestid" />
                 <ScalarProperty Name="employeeid" ColumnName="employeeid" />
                 <ScalarProperty Name="employeefirstname" ColumnName="employeefirstname" />

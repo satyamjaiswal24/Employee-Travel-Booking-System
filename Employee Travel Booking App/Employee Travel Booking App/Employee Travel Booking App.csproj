@@ -174,6 +174,8 @@
     <Compile Include="Controllers\Admin\TravelAgentsController.cs" />
     <Compile Include="Controllers\Admin\ViewRequestController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Manager\ManagerController.cs" />
+    <Compile Include="Controllers\Manager\ManagerLoginController.cs" />
     <Compile Include="Controllers\StartController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="employee.cs">
@@ -384,6 +386,13 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Manager\Requests.cshtml" />
+    <Content Include="Views\Manager\ManagerDashboard.cshtml" />
+    <Content Include="Views\ManagerLogin\ManagerLogin.cshtml" />
+    <Content Include="Views\Manager\Details.cshtml" />
+    <Content Include="Views\Manager\Approve.cshtml" />
+    <Content Include="Views\Manager\Reject.cshtml" />
+    <Content Include="Views\Manager\RequestHistory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

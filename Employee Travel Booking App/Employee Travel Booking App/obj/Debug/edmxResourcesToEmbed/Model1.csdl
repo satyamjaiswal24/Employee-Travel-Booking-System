@@ -69,6 +69,7 @@
     <Property Name="approvalstatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="bookingstatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="employee" Relationship="Self.FK__travelreq__emplo__2EDAF651" FromRole="travelrequest" ToRole="employees" />
+    <Property Name="returnDate" Type="DateTime" Precision="0" />
   </EntityType>
   <Association Name="FK__employees__manag__74AE54BC">
     <End Role="managers" Type="Self.manager" Multiplicity="0..1" />

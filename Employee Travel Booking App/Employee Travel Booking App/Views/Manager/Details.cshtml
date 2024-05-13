@@ -1,0 +1,120 @@
+﻿@model Employee_Travel_Booking_App.travelrequest
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<style>
+    .details-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .details-title {
+        font-size: 28px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .details-list dt {
+        font-weight: bold;
+        color: #007bff;
+        margin-top: 15px;
+    }
+
+    .details-list dd {
+        margin-left: 0;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .details-buttons {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+        .details-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            .details-buttons a.edit {
+                background-color: #28a745;
+            }
+
+                .details-buttons a.edit:hover {
+                    background-color: #218838;
+                }
+
+            .details-buttons a.back {
+                background-color: #dc3545;
+                margin-left: 10px;
+            }
+
+                .details-buttons a.back:hover {
+                    background-color: #c82333;
+                }
+</style>
+
+<div class="details-container">
+    <h2 class="details-title">Details</h2>
+    <div class="details-list">
+        <dl class="dl-horizontal">
+            <dt>Request ID</dt>
+            <dd>@Html.DisplayFor(model => model.requestid)</dd>
+
+            <dt>Employee Id</dt>
+            <dd>@Html.DisplayFor(model => model.employeeid)</dd>
+
+            <dt>First Name</dt>
+            <dd>@Html.DisplayFor(model => model.employeefirstname)</dd>
+
+            <dt>Last Name</dt>
+            <dd>@Html.DisplayFor(model => model.employeelastname)</dd>
+
+            <dt>Email</dt>
+            <dd>@Html.DisplayFor(model => model.employeeemail)</dd>
+
+            <dt>Reason for Travel</dt>
+            <dd>@Html.DisplayFor(model => model.reasonfortravel)</dd>
+
+            <dt>Flight Needed</dt>
+            <dd>@Html.DisplayFor(model => model.flightneeded)</dd>
+
+            <dt>Hotel Needed</dt>
+            <dd>@Html.DisplayFor(model => model.hotelneeded)</dd>
+
+            <dt>Departure City</dt>
+            <dd>@Html.DisplayFor(model => model.departurecity)</dd>
+
+            <dt>Arrival City</dt>
+            <dd>@Html.DisplayFor(model => model.arrivalcity)</dd>
+
+            <dt>Departure Date</dt>
+            <dd>@Html.DisplayFor(model => model.departuredate)</dd> 
+            
+            <dt>Departure Time</dt>
+            <dd>@Html.DisplayFor(model => model.departuretime)</dd>   
+            
+            <dt>Return Date</dt>
+            <dd>@Html.DisplayFor(model => model.returnDate)</dd>
+
+            <dt>Additional Information</dt>
+            <dd>@Html.DisplayFor(model => model.additionalinformation)</dd>
+
+            <dt>Approval Status</dt>
+            <dd>@Html.DisplayFor(model => model.approvalstatus)</dd>
+        </dl>
+    </div>
+    <div class="details-buttons">
+        @Html.ActionLink("Back", "Requests", new { id = Model.requestid }, new { @class = "btn btn-primary edit" })
+    </div>
+</div>

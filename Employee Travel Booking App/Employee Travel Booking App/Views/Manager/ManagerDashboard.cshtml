@@ -1,0 +1,119 @@
+﻿<head>
+   
+    <title>Manager Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            padding: 15px 0;
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            header h1 {
+                margin: 0;
+                display: inline;
+            }
+
+        .logout {
+            color: #fff;
+            text-decoration: none;
+            float: right;
+            margin-top: 5px;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+
+
+            .logout:hover {
+                background-color: #0056b3;
+                color: white;
+            }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .option {
+            margin: 0 10px;
+        }
+
+            .option a {
+                display: inline-block;
+                padding: 15px 25px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+                .option a:hover {
+                    background-color: #0056b3;
+                    transform: translateY(-2px);
+                }
+
+
+        footer {
+            background-color: darkblue;
+            color: #fff;
+            padding: 15px 0;
+            position: relative;
+            margin: 0;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container p .Ct {
+            width: 200px;
+            text-align: center;
+        }
+
+        .contra1 .Ct {
+            background-color: gray;
+            color: black;
+        }
+    </style>
+</head>
+
+    <h1>Welcome, Manager !</h1>
+    <!--<header>
+        <div class="container">
+            <h1>Welcome, Manager !</h1>-->
+    @* <a href="@Url.Action("Login_Meth", "LoginAccount")" class="logout">Logout</a>*@
+    <!--</div>
+    </header>-->
+
+    <div class="container">
+        <h2>Manager Dashboard</h2>
+        <div class="options">
+            <div class="option">
+                <a href="@Url.Action("Requests", "Manager")" class="approve">View Requests</a>
+            </div>
+            <div class="option">
+                <a href="@Url.Action("RequestHistory", "Manager")" class="history">View Request History</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</html>

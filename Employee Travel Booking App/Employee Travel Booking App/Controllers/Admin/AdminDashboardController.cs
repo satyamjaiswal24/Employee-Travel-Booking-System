@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Employee_Travel_Booking_App.Controllers.Admin
 {
+    [Authorize]
     public class AdminDashboardController : Controller
     {
         // GET: AdminDashboard

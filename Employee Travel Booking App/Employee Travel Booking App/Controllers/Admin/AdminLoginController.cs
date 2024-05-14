@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace Employee_Travel_Booking_App.Controllers.Admin
 {
@@ -40,6 +41,7 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
                 {
                     Session["email"] = email;
                     Session["password"] = password;
+                    FormsAuthentication.SetAuthCookie(email, false);
                     // Redirect to the dashboard controller
                     return RedirectToAction("Index", "AdminDashboard");
                 }
@@ -53,6 +55,12 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
                 TempData["ErrorMessage"] = ex.Message;
                 return View();
             }
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login","AdminLogin");
         }
 
 

@@ -11,6 +11,7 @@ using Employee_Travel_Booking_App;
 
 namespace Employee_Travel_Booking_App.Controllers.Admin
 {
+    [Authorize]
     public class TravelAgentsController : Controller
     {
         private Emp_travel_booking_Entities db = new Emp_travel_booking_Entities();

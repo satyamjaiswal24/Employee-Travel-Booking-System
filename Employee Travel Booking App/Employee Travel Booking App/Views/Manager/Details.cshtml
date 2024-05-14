@@ -2,6 +2,8 @@
 
 @{
     ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
 }
 
 <style>
@@ -21,16 +23,27 @@
         margin-bottom: 20px;
     }
 
+    .details-list dl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .details-list dt,
+    .details-list dd {
+        flex: 1 1 50%;
+        margin: 0;
+        padding: 5px;
+    }
+
     .details-list dt {
         font-weight: bold;
         color: #007bff;
-        margin-top: 15px;
+        text-align: right;
     }
 
     .details-list dd {
-        margin-left: 0;
-        margin-bottom: 10px;
         color: #555;
+        text-align: left;
     }
 
     .details-buttons {

@@ -11,6 +11,7 @@ using Employee_Travel_Booking_App;
 
 namespace Employee_Travel_Booking_App.Controllers.Admin
 {
+    [Authorize]
     public class EmployeesController : Controller
     {
         private Emp_travel_booking_Entities db = new Emp_travel_booking_Entities();
@@ -51,16 +52,26 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "employeeid,emp_name,email,emp_password,department,position,hiredate,phonenumber,address,managerid")] employee employee)
         {
-            if (ModelState.IsValid)
+            try
             {
-                employee.status = true;
-                db.employees.Add(employee);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
+                if (ModelState.IsValid)
+                {
+                    employee.status = true;
+                    db.employees.Add(employee);
+                    await db.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
 
-            ViewBag.managerid = new SelectList(db.managers, "managerid", "name", employee.managerid);
-            return View(employee);
+                ViewBag.managerid = new SelectList(db.managers, "managerid", "name", employee.managerid);
+                return View(employee);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception for further investigation
+                // You can also display a user-friendly error message
+                ModelState.AddModelError("", "An error occurred while processing your request.");
+                return RedirectToAction("Index");// Return the view to display the error
+            }
         }
 
         // GET: Employees/Edit/5
@@ -182,6 +193,12 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
 
             return RedirectToAction("Index");
         }
+        public JsonResult IsEmailAvailable(string email)
+        {
+            bool isAvailable = !db.employees.Any(e => e.email == email);
+            return Json(isAvailable, JsonRequestBehavior.AllowGet);
+        }
+
 
         protected override void Dispose(bool disposing)
         {

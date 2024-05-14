@@ -54,7 +54,6 @@
     <EntitySetMapping Name="travelrequests">
       <EntityTypeMapping TypeName="Emp_travel_booking_systemModel.travelrequest">
         <MappingFragment StoreEntitySet="travelrequest">
-          <ScalarProperty Name="returnDate" ColumnName="returnDate" />
           <ScalarProperty Name="requestid" ColumnName="requestid" />
           <ScalarProperty Name="employeeid" ColumnName="employeeid" />
           <ScalarProperty Name="employeefirstname" ColumnName="employeefirstname" />
@@ -70,6 +69,7 @@
           <ScalarProperty Name="additionalinformation" ColumnName="additionalinformation" />
           <ScalarProperty Name="approvalstatus" ColumnName="approvalstatus" />
           <ScalarProperty Name="bookingstatus" ColumnName="bookingstatus" />
+          <ScalarProperty Name="returnDate" ColumnName="returnDate" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -2,6 +2,8 @@
 
 @{
     ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
 }
 
 <!DOCTYPE html>
@@ -139,7 +141,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('form').submit(function () {
+            $('form').submit(function (event) {
                 var empName = $("#emp_name").val().trim();
                 var email = $("#email").val().trim();
                 var password = $("#password").val().trim();
@@ -148,9 +150,21 @@
                     alert("Please fill out all required fields.");
                     return false;
                 }
-                return true;
+
+                // Check email existence via AJAX
+                $.get("/Employees/IsEmailAvailable", { email: email }, function (data) {
+                    if (!data) {
+                        alert("The email is already in use. Please choose a new email.");
+                        event.preventDefault(); // Prevent form submission
+                    } else {
+                        // Continue with form submission
+                    }
+                });
+
+                return true; // Continue with form submission (if email check is asynchronous)
             });
         });
+
     </script>
 </body>
 </html>

@@ -40,7 +40,7 @@
     <Key>
       <PropertyRef Name="agentid" />
     </Key>
-    <Property Name="agentid" Type="int" Nullable="false" />
+    <Property Name="agentid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="name" Type="varchar" MaxLength="100" />
     <Property Name="email" Type="varchar" MaxLength="100" />
     <Property Name="travel_agent_password" Type="varchar" MaxLength="50" />
@@ -50,7 +50,7 @@
     <Key>
       <PropertyRef Name="requestid" />
     </Key>
-    <Property Name="requestid" Type="int" Nullable="false" />
+    <Property Name="requestid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="employeeid" Type="int" />
     <Property Name="employeefirstname" Type="varchar" MaxLength="100" />
     <Property Name="employeelastname" Type="varchar" MaxLength="100" />
@@ -67,7 +67,7 @@
     <Property Name="bookingstatus" Type="varchar" MaxLength="50" />
     <Property Name="returnDate" Type="date" />
   </EntityType>
-  <Association Name="FK__employees__manag__74AE54BC">
+  <Association Name="FK__employees__manag__6AEFE058">
     <End Role="managers" Type="Self.managers" Multiplicity="0..1" />
     <End Role="employees" Type="Self.employees" Multiplicity="*" />
     <ReferentialConstraint>
@@ -79,7 +79,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__travelreq__emplo__2EDAF651">
+  <Association Name="FK__travelreq__emplo__73852659">
     <End Role="employees" Type="Self.employees" Multiplicity="0..1" />
     <End Role="travelrequest" Type="Self.travelrequest" Multiplicity="*" />
     <ReferentialConstraint>
@@ -97,11 +97,11 @@
     <EntitySet Name="managers" EntityType="Self.managers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="travelagents" EntityType="Self.travelagents" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="travelrequest" EntityType="Self.travelrequest" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__employees__manag__74AE54BC" Association="Self.FK__employees__manag__74AE54BC">
+    <AssociationSet Name="FK__employees__manag__6AEFE058" Association="Self.FK__employees__manag__6AEFE058">
       <End Role="managers" EntitySet="managers" />
       <End Role="employees" EntitySet="employees" />
     </AssociationSet>
-    <AssociationSet Name="FK__travelreq__emplo__2EDAF651" Association="Self.FK__travelreq__emplo__2EDAF651">
+    <AssociationSet Name="FK__travelreq__emplo__73852659" Association="Self.FK__travelreq__emplo__73852659">
       <End Role="employees" EntitySet="employees" />
       <End Role="travelrequest" EntitySet="travelrequest" />
     </AssociationSet>

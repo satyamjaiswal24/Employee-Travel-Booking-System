@@ -1,0 +1,75 @@
+﻿@model Employee_Travel_Booking_App.travelrequest
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<style>
+    .row {
+        border-bottom: 1px solid #dee2e6; /* Add border to each row */
+        padding: 5px 0; /* Add padding to each row */
+    }
+
+    .col-sm-4,
+    .col-sm-8 {
+        padding: 10px; /* Add padding to each column */
+        border-right: 1px solid #dee2e6; /* Add border to each column */
+    }
+
+        .col-sm-8:last-child,
+        .col-sm-4:last-child {
+            border-right: none; /* Remove border from last column in each row */
+        }
+</style>
+
+<h2>Travel Request Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-4">First Name:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.employeename)</dd>
+
+            <dt class="col-sm-4">Email:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.employeeemail)</dd>
+
+            <dt class="col-sm-4">Reason for Travel:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.reasonfortravel)</dd>
+
+            <dt class="col-sm-4">Flight Needed:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.flightneeded)</dd>
+
+            <dt class="col-sm-4">Hotel Needed:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.hotelneeded)</dd>
+
+            <dt class="col-sm-4">Departure City:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.departurecity)</dd>
+
+            <dt class="col-sm-4">Arrival City:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.arrivalcity)</dd>
+
+            <dt class="col-sm-4">Departure Date:</dt>
+            <dd class="col-sm-8">@Model.departuredate.Value.ToString("dd-MM-yyyy")</dd>
+
+
+            <dt class="col-sm-4">Departure Time:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.departuretime)</dd>
+
+            <dt class="col-sm-4">Additional Information:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.additionalinformation)</dd>
+
+            <dt class="col-sm-4">Status:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.approvalstatus)</dd>
+
+            @if (Model.approvalstatus != "Cancelled" && Model.approvalstatus != "Rejected")
+            {
+                <div class="row">
+                    <dt class="col-sm-4">Booking Status:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.bookingstatus)</dd>
+                </div>
+            }
+        </dl>
+    </div>
+</div>
+

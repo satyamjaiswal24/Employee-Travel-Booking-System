@@ -16,8 +16,7 @@ namespace Employee_Travel_Booking_App
     {
         public int requestid { get; set; }
         public Nullable<int> employeeid { get; set; }
-        public string employeefirstname { get; set; }
-        public string employeelastname { get; set; }
+        public string employeename { get; set; }
         public string employeeemail { get; set; }
         public string reasonfortravel { get; set; }
         public string flightneeded { get; set; }
@@ -29,7 +28,6 @@ namespace Employee_Travel_Booking_App
         public string additionalinformation { get; set; }
         public string approvalstatus { get; set; }
         public string bookingstatus { get; set; }
-        public Nullable<System.DateTime> returnDate { get; set; }
     
         public virtual employee employee { get; set; }
     }

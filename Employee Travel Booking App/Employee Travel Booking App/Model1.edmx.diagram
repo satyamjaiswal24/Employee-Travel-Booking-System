@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9eea8ee34ce045e79e825c740bcbf950" Name="Diagram1">
+      <Diagram DiagramId="252da968deb54c36a0895ae7639bbf02" Name="Diagram1">
         <EntityTypeShape EntityType="Emp_travel_booking_systemModel.admin" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.employee" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.manager" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.travelagent" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.employee" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.manager" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Emp_travel_booking_systemModel.travelagent" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Emp_travel_booking_systemModel.travelrequest" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="Emp_travel_booking_systemModel.FK__employees__manag__6AEFE058" ManuallyRouted="false" />
-        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__travelreq__emplo__73852659" ManuallyRouted="false" />
+        <AssociationConnector Association="Emp_travel_booking_systemModel.FK__travelreq__emplo__0E391C95" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

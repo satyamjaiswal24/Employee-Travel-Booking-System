@@ -1,8 +1,7 @@
-﻿@{
-    ViewBag.Title = "ManagerLogin";
-    Layout = null;
+﻿﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_loginLayout.cshtml";
 }
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,35 +12,54 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
+            overflow: hidden; /* Hide overflow to prevent scrolling */
+            position: relative;
+            background-color: whitesmoke; /* Black background */
         }
 
         .login-container {
-            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background color */
             border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px; /* Increase the width of the container */
-            margin: auto; /* Horizontally center the container */
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Blue box shadow */
+            width: 400px;
+            max-width: 90%; /* Adjust maximum width as needed */
+            animation: slideIn 0.5s forwards; /* Apply slide-in animation */
+            opacity: 0; /* Start with opacity 0 */
+            width: 350px; /* Set width to 350 pixels */
+            height: auto;
+        }
+
+        @@keyframes slideIn {
+            from {
+                transform: translate(-50%, -70%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
         }
 
         h2 {
             text-align: center;
             margin-bottom: 20px;
-            color: #007bff; /* Change the title color */
+            color: #1e90ff; /* Blue title */
         }
 
         label {
             display: block;
             font-weight: bold;
             margin-bottom: 10px; /* Increase margin bottom */
-            color: #333; /* Change the label color */
+            color: #fff; /* White label color */
         }
 
         input[type="text"],
@@ -49,26 +67,28 @@
             width: 100%;
             padding: 12px; /* Increase padding */
             margin-bottom: 20px; /* Increase margin bottom */
-            border: 1px solid #ccc;
+            border: 1px solid #00f; /* Blue border */
             border-radius: 5px;
-            justify-content: center;
             box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            margin-top: 15px;
         }
 
         input[type="submit"] {
             width: 100%;
             padding: 12px; /* Increase padding */
-            background-color: #007bff;
-            color: #fff;
-            justify-content: center;
+            background-color: #1e90ff; /* Blue background */
+            color: #fff; /* White text color */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-top: 25px;
         }
 
             input[type="submit"]:hover {
-                background-color: #0056b3;
+                background-color: #005;
+                /* Darker blue on hover */
             }
 
         .error-message {
@@ -80,7 +100,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Manager Login</h2>
+        <h2>Manger Login</h2>
         @if (TempData["ErrorMessage"] != null)
         {
             <div class="error-message">@TempData["ErrorMessage"]</div>
@@ -90,7 +110,7 @@
             @Html.AntiForgeryToken() <!-- Include anti-forgery token -->
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
-            <label for="password">Password:</label>
+            <label for="password" style="margin-top:16px">Password:</label>
             <input type="password" id="password" name="password" required>
             <input type="submit" value="Login">
         </form>

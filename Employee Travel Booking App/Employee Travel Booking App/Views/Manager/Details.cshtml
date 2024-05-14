@@ -3,7 +3,6 @@
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
-
 }
 
 <style>
@@ -18,30 +17,33 @@
 
     .details-title {
         font-size: 28px;
-        color: #333;
+        color: #fff; /* Changed text color to white */
         text-align: center;
         margin-bottom: 20px;
+        background-color: darkgrey; /* Added dark slate color */
+        padding: 10px 0; /* Added padding for better appearance */
+        border-radius: 5px; /* Added border radius for rounded corners */
     }
 
     .details-list dl {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .details-list dt,
-    .details-list dd {
-        flex: 1 1 50%;
-        margin: 0;
-        padding: 5px;
+        justify-content: space-between;
     }
 
     .details-list dt {
+        flex: 0 0 30%;
+        margin: 0;
+        padding: 5px;
         font-weight: bold;
         color: #007bff;
-        text-align: right;
+        text-align: left;
     }
 
     .details-list dd {
+        flex: 0 0 65%;
+        margin: 0;
+        padding: 5px;
         color: #555;
         text-align: left;
     }
@@ -78,52 +80,52 @@
 </style>
 
 <div class="details-container">
-    <h2 class="details-title">Details</h2>
+    <h1 class="details-title">Details</h1>
     <div class="details-list">
         <dl class="dl-horizontal">
-            <dt>Request ID</dt>
+            <dt>Request ID:</dt>
             <dd>@Html.DisplayFor(model => model.requestid)</dd>
 
-            <dt>Employee Id</dt>
+            <dt>Employee ID:</dt>
             <dd>@Html.DisplayFor(model => model.employeeid)</dd>
 
-            <dt>First Name</dt>
+            <dt>First Name:</dt>
             <dd>@Html.DisplayFor(model => model.employeefirstname)</dd>
 
-            <dt>Last Name</dt>
+            <dt>Last Name:</dt>
             <dd>@Html.DisplayFor(model => model.employeelastname)</dd>
 
-            <dt>Email</dt>
+            <dt>Email:</dt>
             <dd>@Html.DisplayFor(model => model.employeeemail)</dd>
 
-            <dt>Reason for Travel</dt>
+            <dt>Reason for Travel:</dt>
             <dd>@Html.DisplayFor(model => model.reasonfortravel)</dd>
 
-            <dt>Flight Needed</dt>
+            <dt>Flight Needed:</dt>
             <dd>@Html.DisplayFor(model => model.flightneeded)</dd>
 
-            <dt>Hotel Needed</dt>
+            <dt>Hotel Needed:</dt>
             <dd>@Html.DisplayFor(model => model.hotelneeded)</dd>
 
-            <dt>Departure City</dt>
+            <dt>Departure City:</dt>
             <dd>@Html.DisplayFor(model => model.departurecity)</dd>
 
-            <dt>Arrival City</dt>
+            <dt>Arrival City:</dt>
             <dd>@Html.DisplayFor(model => model.arrivalcity)</dd>
 
-            <dt>Departure Date</dt>
-            <dd>@Html.DisplayFor(model => model.departuredate)</dd> 
-            
-            <dt>Departure Time</dt>
-            <dd>@Html.DisplayFor(model => model.departuretime)</dd>   
-            
-            <dt>Return Date</dt>
+            <dt>Departure Date:</dt>
+            <dd>@Html.DisplayFor(model => model.departuredate)</dd>
+
+            <dt>Departure Time:</dt>
+            <dd>@Html.DisplayFor(model => model.departuretime)</dd>
+
+            <dt>Return Date:</dt>
             <dd>@Html.DisplayFor(model => model.returnDate)</dd>
 
-            <dt>Additional Information</dt>
+            <dt>Additional Information:</dt>
             <dd>@Html.DisplayFor(model => model.additionalinformation)</dd>
 
-            <dt>Approval Status</dt>
+            <dt>Approval Status:</dt>
             <dd>@Html.DisplayFor(model => model.approvalstatus)</dd>
         </dl>
     </div>

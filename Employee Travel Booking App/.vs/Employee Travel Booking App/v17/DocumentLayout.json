@@ -3,8 +3,136 @@
   "WorkspaceRootPath": "D:\\Major Project\\Employee Travel Booking App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\manager\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\start\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\start\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|D:\\Major Project\\Employee Travel Booking App\\employee travel booking app\\views\\adminlogin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\adminlogin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\agentdashboard\\agentindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\agentdashboard\\agentindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\agentlogin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\agentlogin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|D:\\Major Project\\Employee Travel Booking App\\employee travel booking app\\views\\employeelogin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\employeelogin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\managerlogin\\managerlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\managerlogin\\managerlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\admin\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\admin\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|D:\\Major Project\\Employee Travel Booking App\\employee travel booking app\\controllers\\admin\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\admin\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\travel agent\\agentdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\travel agent\\agentdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\manager\\requests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\manager\\requests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|D:\\Major Project\\Employee Travel Booking App\\employee travel booking app\\controllers\\manager\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\manager\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\manager\\managerlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\manager\\managerlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\admin\\managerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\admin\\managerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\travel agent\\agentlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\travel agent\\agentlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\admin\\travelagentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\admin\\travelagentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\travelagents\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\travelagents\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|D:\\Major Project\\Employee Travel Booking App\\employee travel booking app\\controllers\\employee\\employeelogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\employee\\employeelogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|D:\\Major Project\\Employee Travel Booking App\\employee travel booking app\\controllers\\employee\\travelrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\employee\\travelrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\travelrequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\travelrequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\employeesd\\erdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\employeesd\\erdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\employee\\employeesdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\employee\\employeesdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\travelrequests\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\travelrequests\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\travelrequests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\travelrequests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\travelrequests\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\travelrequests\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\managers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\managers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|d:\\major project\\employee travel booking app\\employee travel booking app\\controllers\\admin\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\controllers\\admin\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|D:\\Major Project\\Employee Travel Booking App\\employee travel booking app\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{97C90384-2298-49E4-8100-2A7970F5F77A}|Employee Travel Booking App\\Employee Travel Booking App.csproj|solutionrelative:employee travel booking app\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +142,435 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AdminDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\AdminDashboard\\Index.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AdminDashboard\\Index.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\AdminDashboard\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T20:59:41.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AgentLogin\\Login.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\AgentLogin\\Login.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AgentLogin\\Login.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\AgentLogin\\Login.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T20:07:17.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\EmployeeLogin\\Login.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\EmployeeLogin\\Login.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\EmployeeLogin\\Login.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\EmployeeLogin\\Login.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T18:30:36.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagerLogin.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\ManagerLogin\\ManagerLogin.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\ManagerLogin\\ManagerLogin.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\ManagerLogin\\ManagerLogin.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\ManagerLogin\\ManagerLogin.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T20:12:20.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AdminLogin\\Login.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\AdminLogin\\Login.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AdminLogin\\Login.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\AdminLogin\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T18:30:58.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AgentIndex.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AgentDashboard\\AgentIndex.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\AgentDashboard\\AgentIndex.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\AgentDashboard\\AgentIndex.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\AgentDashboard\\AgentIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T20:13:59.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Start\\Index.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\Start\\Index.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Start\\Index.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\Start\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T21:13:52.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AgentDashboardController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Travel Agent\\AgentDashboardController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Travel Agent\\AgentDashboardController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Travel Agent\\AgentDashboardController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Travel Agent\\AgentDashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T20:03:48.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminDashboardController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\AdminDashboardController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Admin\\AdminDashboardController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\AdminDashboardController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Admin\\AdminDashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T20:59:36.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ManagerController.cs",
               "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Manager\\ManagerController.cs",
               "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Manager\\ManagerController.cs",
               "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Manager\\ManagerController.cs",
               "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Manager\\ManagerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA8AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T08:39:25.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_loginLayout.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Shared\\_loginLayout.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\Shared\\_loginLayout.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Shared\\_loginLayout.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\Shared\\_loginLayout.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAowB0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T21:06:24.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAowCcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T21:06:28.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ManagersController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\ManagersController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Admin\\ManagersController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\ManagersController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Admin\\ManagersController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T19:21:50.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminLoginController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\AdminLoginController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Admin\\AdminLoginController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\AdminLoginController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Admin\\AdminLoginController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:27:46.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ManagerLoginController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Manager\\ManagerLoginController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Manager\\ManagerLoginController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Manager\\ManagerLoginController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Manager\\ManagerLoginController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T19:22:10.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAIQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:43:39.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Requests.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Manager\\Requests.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\Manager\\Requests.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Manager\\Requests.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\Manager\\Requests.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAGQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:22:16.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AgentLoginController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Travel Agent\\AgentLoginController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Travel Agent\\AgentLoginController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Travel Agent\\AgentLoginController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Travel Agent\\AgentLoginController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T20:05:20.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\travelagents\\Create.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\travelagents\\Create.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\travelagents\\Create.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\travelagents\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T20:19:48.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TravelAgentsController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\TravelAgentsController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Admin\\TravelAgentsController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\TravelAgentsController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Admin\\TravelAgentsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T20:19:40.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TravelRequestsController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Employee\\TravelRequestsController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Employee\\TravelRequestsController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Employee\\TravelRequestsController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Employee\\TravelRequestsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:35:49.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EmployeeLoginController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Employee\\EmployeeLoginController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Employee\\EmployeeLoginController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Employee\\EmployeeLoginController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Employee\\EmployeeLoginController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:27:37.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Create.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\TravelRequests\\Create.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Create.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\TravelRequests\\Create.cshtml",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAAAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:23:49.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Details.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\TravelRequests\\Details.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Details.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\TravelRequests\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:24:38.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\TravelRequests\\Edit.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Edit.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\TravelRequests\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:25:28.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Index.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\TravelRequests\\Index.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\TravelRequests\\Index.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\TravelRequests\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:26:04.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "employeesDController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Employee\\employeesDController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Employee\\employeesDController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Employee\\employeesDController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Employee\\employeesDController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAwwBMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T19:41:20.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ERDetails.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\employeesD\\ERDetails.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\employeesD\\ERDetails.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\employeesD\\ERDetails.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\employeesD\\ERDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:42:07.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T19:43:36.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\managers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\managers\\Index.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\managers\\Index.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\managers\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:21:54.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Views\\Employees\\Index.cshtml",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Views\\Employees\\Index.cshtml",
+              "RelativeToolTip": "Employee Travel Booking App\\Views\\Employees\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:21:32.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Controllers\\Admin\\EmployeesController.cs",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Controllers\\Admin\\EmployeesController.cs",
+              "RelativeToolTip": "Employee Travel Booking App\\Controllers\\Admin\\EmployeesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T19:04:35.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Web.config",
+              "RelativeDocumentMoniker": "Employee Travel Booking App\\Web.config",
+              "ToolTip": "D:\\Major Project\\Employee Travel Booking App\\Employee Travel Booking App\\Web.config",
+              "RelativeToolTip": "Employee Travel Booking App\\Web.config",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-14T18:21:38.694Z",
               "EditorCaption": ""
             }
           ]

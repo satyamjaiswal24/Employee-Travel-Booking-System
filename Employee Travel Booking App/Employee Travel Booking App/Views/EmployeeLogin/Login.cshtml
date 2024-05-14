@@ -1,7 +1,6 @@
 ﻿﻿@{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_loginLayout.cshtml";
-
 }
 
 <!DOCTYPE html>
@@ -9,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
+    <title>Employee Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -101,12 +100,12 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Admin Login</h2>
+        <h2>Employee Login</h2>
         @if (TempData["ErrorMessage"] != null)
         {
             <div class="error-message">@TempData["ErrorMessage"]</div>
         }
-        <form method="post" action="@Url.Action("Login", "AdminLogin")">
+        <form method="post" action="@Url.Action("Login", "EmployeeLogin")">
             <!-- Updated action URL -->
             @Html.AntiForgeryToken() <!-- Include anti-forgery token -->
             <label for="email">Email:</label>

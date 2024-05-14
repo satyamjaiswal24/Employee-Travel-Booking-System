@@ -1,7 +1,6 @@
 ﻿﻿@{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_loginLayout.cshtml";
-
 }
 
 <!DOCTYPE html>
@@ -9,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
+    <title>Agent Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,7 +32,7 @@
             width: 400px;
             max-width: 90%; /* Adjust maximum width as needed */
             animation: slideIn 0.5s forwards; /* Apply slide-in animation */
-            opacity: 0; /* Start with opacity 0 */
+            opacity: 7; /* Start with opacity 0 */
             width: 350px; /* Set width to 350 pixels */
             height: auto;
         }
@@ -46,7 +45,7 @@
 
             to {
                 transform: translate(-50%, -50%);
-                opacity: 1;
+                opacity: 7;
             }
         }
 
@@ -101,12 +100,12 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Admin Login</h2>
+        <h2>Agent Login</h2>
         @if (TempData["ErrorMessage"] != null)
         {
             <div class="error-message">@TempData["ErrorMessage"]</div>
         }
-        <form method="post" action="@Url.Action("Login", "AdminLogin")">
+        <form method="post" action="@Url.Action("Login", "AgentLogin")">
             <!-- Updated action URL -->
             @Html.AntiForgeryToken() <!-- Include anti-forgery token -->
             <label for="email">Email:</label>

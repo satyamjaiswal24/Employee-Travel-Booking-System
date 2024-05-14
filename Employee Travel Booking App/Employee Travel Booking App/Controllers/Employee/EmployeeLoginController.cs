@@ -5,26 +5,27 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace Employee_Travel_Booking_App.Controllers.Manager
+namespace Employee_Travel_Booking_App.Controllers.Employee
 {
-    public class ManagerLoginController : Controller
+    public class EmployeeLoginController : Controller
     {
-        Emp_travel_booking_Entities db = new Emp_travel_booking_Entities();
-        public ActionResult Index()
+       
+        private readonly Emp_travel_booking_Entities db; // Replace YourDbContext with your actual DbContext class
+
+        public EmployeeLoginController()
         {
-            return View();
+            db = new Emp_travel_booking_Entities(); // Initialize your DbContext
         }
 
-
         [HttpGet]
-        public ActionResult ManagerLogin()
+        public ActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult ManagerLogin(string email, string password)
+        public ActionResult Login(string email, string password)
         {
             try
             {
@@ -34,18 +35,17 @@ namespace Employee_Travel_Booking_App.Controllers.Manager
                 }
 
                 // Retrieve the admin by email
-                var manager = db.managers.FirstOrDefault(a => a.email == email);
+                var emp = db.employees.FirstOrDefault(a => a.email == email && a.emp_password == password);
 
                 // Validate admin existence and password
-                if (manager != null)
+                if (emp != null)
                 {
-                    Session["ManagerId"] = manager.managerid;
-                    Session["email"] = email;
-                    Session["password"] = password;
-                    FormsAuthentication.SetAuthCookie(email, false);
-
+                    Session["EmployeeId"] = emp.employeeid;
+                    Session["EmployeeName"] = emp.emp_name;
+                    Session["EmployeeEmail"] = emp.email;
+                    // FormsAuthentication.SetAuthCookie(email, false);
                     // Redirect to the dashboard controller
-                    return RedirectToAction("ManagerDashboard", "Manager");
+                    return RedirectToAction("Index", "TravelRequests");
                 }
                 else
                 {
@@ -58,10 +58,11 @@ namespace Employee_Travel_Booking_App.Controllers.Manager
                 return View();
             }
         }
+
         public ActionResult Logout()
         {
-            FormsAuthentication.SignOut();
-            return RedirectToAction("ManagerLogin", "ManagerLogin");
+            //FormsAuthentication.SignOut();
+            return RedirectToAction("Login", "EmployeeLogin");
         }
     }
 }

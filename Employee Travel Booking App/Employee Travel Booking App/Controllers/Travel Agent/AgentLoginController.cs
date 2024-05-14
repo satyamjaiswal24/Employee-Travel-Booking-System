@@ -5,26 +5,27 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace Employee_Travel_Booking_App.Controllers.Manager
+namespace Employee_Travel_Booking_App.Controllers.Travel_Agent
 {
-    public class ManagerLoginController : Controller
+    public class AgentLoginController : Controller
     {
-        Emp_travel_booking_Entities db = new Emp_travel_booking_Entities();
-        public ActionResult Index()
+        // GET: AgentLogin
+        private readonly Emp_travel_booking_Entities db; // Replace YourDbContext with your actual DbContext class
+
+        public AgentLoginController()
         {
-            return View();
+            db = new Emp_travel_booking_Entities(); // Initialize your DbContext
         }
 
-
         [HttpGet]
-        public ActionResult ManagerLogin()
+        public ActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult ManagerLogin(string email, string password)
+        public ActionResult Login(string email, string password)
         {
             try
             {
@@ -34,18 +35,16 @@ namespace Employee_Travel_Booking_App.Controllers.Manager
                 }
 
                 // Retrieve the admin by email
-                var manager = db.managers.FirstOrDefault(a => a.email == email);
+                var agent = db.travelagents.FirstOrDefault(a => a.email == email && a.travel_agent_password == password);
 
                 // Validate admin existence and password
-                if (manager != null)
+                if (agent != null)
                 {
-                    Session["ManagerId"] = manager.managerid;
                     Session["email"] = email;
                     Session["password"] = password;
                     FormsAuthentication.SetAuthCookie(email, false);
-
                     // Redirect to the dashboard controller
-                    return RedirectToAction("ManagerDashboard", "Manager");
+                    return RedirectToAction("AgentIndex", "AgentDashboard");
                 }
                 else
                 {
@@ -58,10 +57,12 @@ namespace Employee_Travel_Booking_App.Controllers.Manager
                 return View();
             }
         }
+
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("ManagerLogin", "ManagerLogin");
+            return RedirectToAction("Login", "AgentLogin");
         }
+
     }
 }

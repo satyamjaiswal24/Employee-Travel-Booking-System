@@ -57,8 +57,7 @@
           </Key>
           <Property Name="requestid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="employeeid" Type="int" />
-          <Property Name="employeefirstname" Type="varchar" MaxLength="100" />
-          <Property Name="employeelastname" Type="varchar" MaxLength="100" />
+          <Property Name="employeename" Type="varchar" MaxLength="100" />
           <Property Name="employeeemail" Type="varchar" MaxLength="100" />
           <Property Name="reasonfortravel" Type="varchar" MaxLength="255" />
           <Property Name="flightneeded" Type="varchar" MaxLength="5" />
@@ -70,7 +69,6 @@
           <Property Name="additionalinformation" Type="text" />
           <Property Name="approvalstatus" Type="varchar" MaxLength="50" />
           <Property Name="bookingstatus" Type="varchar" MaxLength="50" />
-          <Property Name="returnDate" Type="date" />
         </EntityType>
         <Association Name="FK__employees__manag__6AEFE058">
           <End Role="managers" Type="Self.managers" Multiplicity="0..1" />
@@ -84,7 +82,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__travelreq__emplo__73852659">
+        <Association Name="FK__travelreq__emplo__0E391C95">
           <End Role="employees" Type="Self.employees" Multiplicity="0..1" />
           <End Role="travelrequest" Type="Self.travelrequest" Multiplicity="*" />
           <ReferentialConstraint>
@@ -106,7 +104,7 @@
             <End Role="managers" EntitySet="managers" />
             <End Role="employees" EntitySet="employees" />
           </AssociationSet>
-          <AssociationSet Name="FK__travelreq__emplo__73852659" Association="Self.FK__travelreq__emplo__73852659">
+          <AssociationSet Name="FK__travelreq__emplo__0E391C95" Association="Self.FK__travelreq__emplo__0E391C95">
             <End Role="employees" EntitySet="employees" />
             <End Role="travelrequest" EntitySet="travelrequest" />
           </AssociationSet>
@@ -141,7 +139,7 @@
           <Property Name="managerid" Type="Int32" />
           <Property Name="status" Type="Boolean" />
           <NavigationProperty Name="manager" Relationship="Self.FK__employees__manag__6AEFE058" FromRole="employees" ToRole="managers" />
-          <NavigationProperty Name="travelrequests" Relationship="Self.FK__travelreq__emplo__73852659" FromRole="employees" ToRole="travelrequest" />
+          <NavigationProperty Name="travelrequests" Relationship="Self.FK__travelreq__emplo__0E391C95" FromRole="employees" ToRole="travelrequest" />
         </EntityType>
         <EntityType Name="manager">
           <Key>
@@ -171,8 +169,7 @@
           </Key>
           <Property Name="requestid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="employeeid" Type="Int32" />
-          <Property Name="employeefirstname" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="employeelastname" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="employeename" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="employeeemail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="reasonfortravel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="flightneeded" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
@@ -184,8 +181,7 @@
           <Property Name="additionalinformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="approvalstatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="bookingstatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="returnDate" Type="DateTime" Precision="0" />
-          <NavigationProperty Name="employee" Relationship="Self.FK__travelreq__emplo__73852659" FromRole="travelrequest" ToRole="employees" />
+          <NavigationProperty Name="employee" Relationship="Self.FK__travelreq__emplo__0E391C95" FromRole="travelrequest" ToRole="employees" />
         </EntityType>
         <Association Name="FK__employees__manag__6AEFE058">
           <End Role="managers" Type="Self.manager" Multiplicity="0..1" />
@@ -199,7 +195,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__travelreq__emplo__73852659">
+        <Association Name="FK__travelreq__emplo__0E391C95">
           <End Role="employees" Type="Self.employee" Multiplicity="0..1" />
           <End Role="travelrequest" Type="Self.travelrequest" Multiplicity="*" />
           <ReferentialConstraint>
@@ -221,7 +217,7 @@
             <End Role="managers" EntitySet="managers" />
             <End Role="employees" EntitySet="employees" />
           </AssociationSet>
-          <AssociationSet Name="FK__travelreq__emplo__73852659" Association="Self.FK__travelreq__emplo__73852659">
+          <AssociationSet Name="FK__travelreq__emplo__0E391C95" Association="Self.FK__travelreq__emplo__0E391C95">
             <End Role="employees" EntitySet="employees" />
             <End Role="travelrequest" EntitySet="travelrequests" />
           </AssociationSet>
@@ -287,8 +283,7 @@
               <MappingFragment StoreEntitySet="travelrequest">
                 <ScalarProperty Name="requestid" ColumnName="requestid" />
                 <ScalarProperty Name="employeeid" ColumnName="employeeid" />
-                <ScalarProperty Name="employeefirstname" ColumnName="employeefirstname" />
-                <ScalarProperty Name="employeelastname" ColumnName="employeelastname" />
+                <ScalarProperty Name="employeename" ColumnName="employeename" />
                 <ScalarProperty Name="employeeemail" ColumnName="employeeemail" />
                 <ScalarProperty Name="reasonfortravel" ColumnName="reasonfortravel" />
                 <ScalarProperty Name="flightneeded" ColumnName="flightneeded" />
@@ -300,7 +295,6 @@
                 <ScalarProperty Name="additionalinformation" ColumnName="additionalinformation" />
                 <ScalarProperty Name="approvalstatus" ColumnName="approvalstatus" />
                 <ScalarProperty Name="bookingstatus" ColumnName="bookingstatus" />
-                <ScalarProperty Name="returnDate" ColumnName="returnDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

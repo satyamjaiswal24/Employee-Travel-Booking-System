@@ -1,0 +1,189 @@
+﻿﻿@model Employee_Travel_Booking_App.travelrequest
+
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2 class="text-center mb-4">Travel Request</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="form-horizontal">
+
+        <hr />
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.reasonfortravel, "Travel Reason :", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.reasonfortravel, new { htmlAttributes = new { @class = "form-control", required = "required", placeholder = "Enter your travel reason here" } })
+                @Html.ValidationMessageFor(model => model.reasonfortravel, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.flightneeded, "Need Flight? :", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.flightneeded, new SelectList(new[] { "Yes", "No" }), "-- Select --", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.flightneeded, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.hotelneeded, "Need Hotel? :", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.hotelneeded, new SelectList(new[] { "Yes", "No" }), "-- Select --", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.hotelneeded, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.departurecity, "Departure City :", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.departurecity, GetCities(), "-- Select --", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.departurecity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.arrivalcity, "Arrival City :", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.arrivalcity, GetCities(), "-- Select --", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.arrivalcity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.departuredate, "Departure Date :", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.departuredate, new { htmlAttributes = new { @class = "form-control", required = "required", id = "departuredate", placeholder = "Select departure date" } })
+                @Html.ValidationMessageFor(model => model.departuredate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @{
+            List<SelectListItem> timeOptions = new List<SelectListItem>();
+            for (int i = 0; i < 24; i++)
+            {
+                for (int j = 0; j < 60; j += 15) // Add options every 15 minutes
+                {
+                    timeOptions.Add(new SelectListItem
+                    {
+                        Text = $"{i:D2}:{j:D2}",
+                        Value = $"{i:D2}:{j:D2}"
+                    });
+                }
+            }
+        }
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.departuretime, "Departure Time:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.departuretime, timeOptions, "Select Time", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(model => model.departuretime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.additionalinformation, "Additional Information:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.additionalinformation, new { @class = "form-control", required = "required", placeholder = "Enter your additional details", rows = "5" })
+                @Html.ValidationMessageFor(model => model.additionalinformation, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <div class="form-group">
+             @Html.LabelFor(model => model.approvalstatus, htmlAttributes: new { @class = "control-label col-md-2" })
+             <div class="col-md-10">
+                 @Html.EditorFor(model => model.approvalstatus, new { htmlAttributes = new { @class = "form-control" } })
+                 @Html.ValidationMessageFor(model => model.approvalstatus, "", new { @class = "text-danger" })
+             </div>
+         </div>-->
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+
+<div class="text-center mt-3">
+    @Html.ActionLink("Back to Dashboard", "Index", null, new { @class = "btn btn-info btn-sm details-btn" })
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#departuredate").datepicker({
+                dateFormat: "yy-mm-dd", // Set the date format
+                minDate: 0 // Set minimum date to today
+                // Add any additional options as needed
+            });
+
+            $("#departuretime").timepicker({
+                timeFormat: 'HH:mm', // Set the time format
+                interval: 15, // Set the interval between times (in minutes)
+                dropdown: true, // Show dropdown for time selection
+                scrollbar: true // Show scrollbar for time selection
+                // Add any additional options as needed
+            });
+        });
+    </script>
+}
+
+@functions {
+    public List<SelectListItem> GetCities()
+    {
+        // Define a list of Indian cities
+        var indianCities = new List<SelectListItem>
+{
+           new SelectListItem { Text = "Mumbai", Value = "Mumbai" },
+new SelectListItem { Text = "Delhi", Value = "Delhi" },
+new SelectListItem { Text = "Bangalore", Value = "Bangalore" },
+new SelectListItem { Text = "Kolkata", Value = "Kolkata" },
+new SelectListItem { Text = "Chennai", Value = "Chennai" },
+new SelectListItem { Text = "Hyderabad", Value = "Hyderabad" },
+new SelectListItem { Text = "Pune", Value = "Pune" },
+new SelectListItem { Text = "Ahmedabad", Value = "Ahmedabad" },
+new SelectListItem { Text = "Surat", Value = "Surat" },
+new SelectListItem { Text = "Jaipur", Value = "Jaipur" },
+new SelectListItem { Text = "Lucknow", Value = "Lucknow" },
+new SelectListItem { Text = "Kanpur", Value = "Kanpur" },
+new SelectListItem { Text = "Nagpur", Value = "Nagpur" },
+new SelectListItem { Text = "Indore", Value = "Indore" },
+new SelectListItem { Text = "Thane", Value = "Thane" },
+new SelectListItem { Text = "Bhopal", Value = "Bhopal" },
+new SelectListItem { Text = "Visakhapatnam", Value = "Visakhapatnam" },
+new SelectListItem { Text = "Pimpri-Chinchwad", Value = "Pimpri-Chinchwad" },
+new SelectListItem { Text = "Patna", Value = "Patna" }
+            // Add more cities as needed
+        };
+
+        return indianCities;
+    }
+}

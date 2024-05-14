@@ -56,8 +56,7 @@
         <MappingFragment StoreEntitySet="travelrequest">
           <ScalarProperty Name="requestid" ColumnName="requestid" />
           <ScalarProperty Name="employeeid" ColumnName="employeeid" />
-          <ScalarProperty Name="employeefirstname" ColumnName="employeefirstname" />
-          <ScalarProperty Name="employeelastname" ColumnName="employeelastname" />
+          <ScalarProperty Name="employeename" ColumnName="employeename" />
           <ScalarProperty Name="employeeemail" ColumnName="employeeemail" />
           <ScalarProperty Name="reasonfortravel" ColumnName="reasonfortravel" />
           <ScalarProperty Name="flightneeded" ColumnName="flightneeded" />
@@ -69,7 +68,6 @@
           <ScalarProperty Name="additionalinformation" ColumnName="additionalinformation" />
           <ScalarProperty Name="approvalstatus" ColumnName="approvalstatus" />
           <ScalarProperty Name="bookingstatus" ColumnName="bookingstatus" />
-          <ScalarProperty Name="returnDate" ColumnName="returnDate" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

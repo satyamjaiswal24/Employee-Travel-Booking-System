@@ -173,10 +173,15 @@
     <Compile Include="Controllers\Admin\ManagersController.cs" />
     <Compile Include="Controllers\Admin\TravelAgentsController.cs" />
     <Compile Include="Controllers\Admin\ViewRequestController.cs" />
+    <Compile Include="Controllers\Employee\employeesDController.cs" />
+    <Compile Include="Controllers\Employee\TravelRequestsController.cs" />
+    <Compile Include="Controllers\Employee\EmployeeLoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Manager\ManagerController.cs" />
     <Compile Include="Controllers\Manager\ManagerLoginController.cs" />
     <Compile Include="Controllers\StartController.cs" />
+    <Compile Include="Controllers\Travel Agent\AgentDashboardController.cs" />
+    <Compile Include="Controllers\Travel Agent\AgentLoginController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="employee.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -402,10 +407,20 @@
     <Content Include="Views\Manager\Reject.cshtml" />
     <Content Include="Views\Manager\RequestHistory.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\EmployeeLogin\Login.cshtml" />
+    <Content Include="Views\TravelRequests\Create.cshtml" />
+    <Content Include="Views\TravelRequests\Details.cshtml" />
+    <Content Include="Views\TravelRequests\Edit.cshtml" />
+    <Content Include="Views\TravelRequests\Index.cshtml" />
+    <Content Include="Views\employeesD\ERDetails.cshtml" />
+    <Content Include="Views\AgentLogin\Login.cshtml" />
+    <Content Include="Views\AgentDashboard\AgentIndex.cshtml" />
+    <Content Include="Views\Shared\_loginLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Employee\" />
     <Folder Include="Views\ManagerEdit\" />
   </ItemGroup>
   <ItemGroup>

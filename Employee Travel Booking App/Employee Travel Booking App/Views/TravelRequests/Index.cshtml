@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Employee_Travel_Booking_App.travelrequest>
+
+@{
+    ViewBag.Title = "Request Dashboard";
+}
+
+<h2 class="text-center mb-4">Request Dashboard</h2>
+<p>
+    @Html.ActionLink("View Profile", "ERDetails", "employeesD", null, new { @class = "btn btn-primary" })
+</p>
+<p>
+    @Html.ActionLink("Raise new request", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-primary">Current Requests</h3>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" id="currentRequestsTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Request Id</th>
+                        <th>Reason for Travel</th>
+                        <th>Departure Date</th>
+                        <th>Status</th>
+                        <th>Booking Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Where(r => (r.approvalstatus == "Pending" || r.approvalstatus == "Approved") && r.bookingstatus == "Pending"))
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.requestid)</td>
+                            <td>@Html.DisplayFor(modelItem => item.reasonfortravel)</td>
+
+                            <td style="white-space: nowrap;">@(item.departuredate.HasValue ? item.departuredate.Value.ToString("dd-MM-yyyy") : "")</td>
+
+
+
+                            <td>@Html.DisplayFor(modelItem => item.approvalstatus)</td>
+                            <td>@Html.DisplayFor(modelItem => item.bookingstatus)</td>
+                            <td>
+                                @Html.ActionLink("Details", "Details", new { id = item.requestid }, new { @class = "btn btn-info btn-sm details-btn", @data_id = item.requestid })
+                                @Html.ActionLink("Cancel", "Edit", new { id = item.requestid }, new { @class = "btn btn-danger btn-sm cancel-btn", @data_id = item.requestid })
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-12">
+        <h3 class="text-primary">Request History</h3>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" id="requestHistoryTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Request Id</th>
+                        <th>Reason for Travel</th>
+                        <th>Departure Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Where(r => r.approvalstatus == "Cancelled" || (r.approvalstatus == "Rejected" && r.bookingstatus == "Pending") ||
+                        (r.approvalstatus == "Approved" && (r.bookingstatus == "Confirmed" || r.bookingstatus == "Not available"))
+                            ))
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.requestid)</td>
+                            <td>@Html.DisplayFor(modelItem => item.reasonfortravel)</td>
+                            <td style="white-space: nowrap;">@(item.departuredate.HasValue ? item.departuredate.Value.ToString("dd-MM-yyyy") : "")</td>
+                            <td>@Html.DisplayFor(modelItem => item.approvalstatus)</td>
+                            <td>
+                                @Html.ActionLink("Details", "Details", new { id = item.requestid }, new { @class = "btn btn-info btn-sm" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

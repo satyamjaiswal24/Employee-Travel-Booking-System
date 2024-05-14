@@ -131,6 +131,13 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public JsonResult IsEmailAvailable(string email)
+        {
+            bool isAvailable = !db.managers.Any(m => m.email == email);
+            return Json(isAvailable, JsonRequestBehavior.AllowGet);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

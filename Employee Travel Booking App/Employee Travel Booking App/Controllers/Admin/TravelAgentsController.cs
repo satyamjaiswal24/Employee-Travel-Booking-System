@@ -52,13 +52,24 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
         {
             if (ModelState.IsValid)
             {
-                db.travelagents.Add(travelagent);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                try
+                {
+                    db.travelagents.Add(travelagent);
+                    await db.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    // Log the error (uncomment ex variable name and add a line here to write a log.
+                    // For example: Log.Error(ex, "Error saving travel agent");
+
+                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+                }
             }
 
             return View(travelagent);
         }
+
 
         // GET: travelagents/Edit/5
         public async Task<ActionResult> Edit(int? id)

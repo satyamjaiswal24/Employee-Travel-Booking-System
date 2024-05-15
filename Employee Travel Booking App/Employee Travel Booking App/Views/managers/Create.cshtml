@@ -62,7 +62,7 @@
     $(document).ready(function () {
         $('form').submit(function (event) {
             var email = $("#email").val().trim();
-            var password = $("#password").val().trim();
+            var password = $("#mgr_password").val().trim(); // Corrected ID selector
 
             if (email === "" || password === "") {
                 alert("Please fill out all required fields.");
@@ -70,7 +70,7 @@
             }
 
             // Check email existence via AJAX
-            $.get("/Employees/IsEmailAvailable", { email: email }, function (data) {
+            $.get("/Managers/IsEmailAvailable", { email: email }, function (data) {
                 if (!data) {
                     alert("The email is already in use. Please choose a new email.");
                     event.preventDefault(); // Prevent form submission

@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
 }
 
 <style>
@@ -89,11 +89,8 @@
             <dt>Employee ID:</dt>
             <dd>@Html.DisplayFor(model => model.employeeid)</dd>
 
-            <dt>First Name:</dt>
-            <dd>@Html.DisplayFor(model => model.employeefirstname)</dd>
-
-            <dt>Last Name:</dt>
-            <dd>@Html.DisplayFor(model => model.employeelastname)</dd>
+            <dt>Employee Name:</dt>
+            <dd>@Html.DisplayFor(model => model.employeename)</dd>
 
             <dt>Email:</dt>
             <dd>@Html.DisplayFor(model => model.employeeemail)</dd>
@@ -118,9 +115,6 @@
 
             <dt>Departure Time:</dt>
             <dd>@Html.DisplayFor(model => model.departuretime)</dd>
-
-            <dt>Return Date:</dt>
-            <dd>@Html.DisplayFor(model => model.returnDate)</dd>
 
             <dt>Additional Information:</dt>
             <dd>@Html.DisplayFor(model => model.additionalinformation)</dd>

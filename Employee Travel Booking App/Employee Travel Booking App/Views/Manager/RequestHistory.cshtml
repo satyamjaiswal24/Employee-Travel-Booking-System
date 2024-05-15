@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "RequestHistory";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
 
 }
 
@@ -98,8 +98,9 @@
     <table class="table">
         <thead>
             <tr>
+                <th style="white-space: nowrap;">Request Id</th>
                 <th style="white-space: nowrap;">Employee Name</th>
-                <th style="white-space: nowrap;">Employee Email</thstyle="white-space:>
+                <th style="white-space: nowrap;">Employee Email</th>
                 <th style="white-space: nowrap;">Employee Id</th>
                 <th style="white-space: nowrap;">Reason For Travel</th>
                 <th style="white-space: nowrap;">Flight Needed</th>
@@ -108,7 +109,6 @@
                 <th style="white-space: nowrap;">Arrival City</th>
                 <th style="white-space: nowrap;">Departure Date</th>
                 <th style="white-space: nowrap;">Departure Time</th>
-                <th style="white-space: nowrap;">Return Date</th>
                 <th style="white-space: nowrap;">Additional Information</th>
                 <th style="white-space: nowrap;">Approval Status</th>
             </tr>
@@ -117,7 +117,8 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@Html.DisplayFor(modelItem => item.employeefirstname) @Html.DisplayFor(modelItem => item.employeelastname)</td>
+                    <td>@Html.DisplayFor(modelItem => item.requestid)</td>
+                    <td>@Html.DisplayFor(modelItem => item.employeename)</td>
                     <td>@Html.DisplayFor(modelItem => item.employeeemail)</td>
                     <td>@Html.DisplayFor(modelItem => item.employeeid)</td>
                     <td>@Html.DisplayFor(modelItem => item.reasonfortravel)</td>
@@ -127,7 +128,6 @@
                     <td>@Html.DisplayFor(modelItem => item.arrivalcity)</td>
                     <td>@Html.DisplayFor(modelItem => item.departuredate)</td>
                     <td>@Html.DisplayFor(modelItem => item.departuretime)</td>
-                    <td>@Html.DisplayFor(modelItem => item.returnDate)</td>
                     <td>@Html.DisplayFor(modelItem => item.additionalinformation)</td>
                     <td>@Html.DisplayFor(modelItem => item.approvalstatus)</td>
                 </tr>

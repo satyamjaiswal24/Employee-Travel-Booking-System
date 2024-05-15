@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Approve Request";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
 
 }
 
@@ -14,7 +14,7 @@
         <dt>Request ID</dt>
         <dd>@Model.requestid</dd>
         <dt>Employee Name</dt>
-        <dd>@(Model.employeefirstname + " " + Model.employeelastname)</dd>
+        <dd>@Model.employeename</dd>
         <dt>Departure City</dt>
         <dd>@Model.departurecity</dd>
         <dt>Arrival City</dt>

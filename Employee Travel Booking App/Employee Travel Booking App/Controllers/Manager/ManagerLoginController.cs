@@ -34,7 +34,7 @@ namespace Employee_Travel_Booking_App.Controllers.Manager
                 }
 
                 // Retrieve the admin by email
-                var manager = db.managers.FirstOrDefault(a => a.email == email);
+                var manager = db.managers.FirstOrDefault(a => a.email == email && a.mgr_password == password);
 
                 // Validate admin existence and password
                 if (manager != null)
@@ -60,6 +60,7 @@ namespace Employee_Travel_Booking_App.Controllers.Manager
         }
         public ActionResult Logout()
         {
+            Session.Clear();
             FormsAuthentication.SignOut();
             return RedirectToAction("ManagerLogin", "ManagerLogin");
         }

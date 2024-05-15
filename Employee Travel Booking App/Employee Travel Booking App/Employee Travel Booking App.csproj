@@ -416,6 +416,9 @@
     <Content Include="Views\AgentLogin\Login.cshtml" />
     <Content Include="Views\AgentDashboard\AgentIndex.cshtml" />
     <Content Include="Views\Shared\_loginLayout.cshtml" />
+    <Content Include="Views\Shared\_EmployeeLayout.cshtml" />
+    <Content Include="Views\Shared\_ManagerLayout.cshtml" />
+    <Content Include="Views\Shared\_AgentLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

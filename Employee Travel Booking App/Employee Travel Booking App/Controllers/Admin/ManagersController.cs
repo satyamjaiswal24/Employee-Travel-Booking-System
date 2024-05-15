@@ -44,16 +44,26 @@ namespace Employee_Travel_Booking_App.Controllers.Admin
         }
 
         // POST: managers/Create
-   
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "managerid,name,department,email,mgr_password")] manager manager)
         {
             if (ModelState.IsValid)
             {
-                db.managers.Add(manager);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                try
+                {
+                    db.managers.Add(manager);
+                    await db.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    // Log the error (uncomment ex variable name and add a line here to write a log.
+                    // For example: Log.Error(ex, "Error saving manager");
+
+                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+                }
             }
 
             return View(manager);

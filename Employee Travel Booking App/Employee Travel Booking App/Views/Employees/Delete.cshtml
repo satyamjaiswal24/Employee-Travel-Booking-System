@@ -63,7 +63,7 @@
 
 <div class="employee-card">
    @* @if (Model.status.HasValue && Model.status.Value)*@
-    {
+    
         <h3>Are you sure you want to delete this employee?</h3>
         <div class="employee-details">
             <h4>Employee Details</h4>
@@ -107,7 +107,7 @@
                 </div>
             }
         </div>
-    }
+    @*  *@
     @*else
     {
         <h3 class="deleted-employee">This employee has been deleted.</h3>

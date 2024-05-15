@@ -145,9 +145,14 @@
                 var empName = $("#emp_name").val().trim();
                 var email = $("#email").val().trim();
                 var password = $("#password").val().trim();
+                var phoneNumber = $("#phonenumber").val().trim();
 
-                if (empName === "" || email === "" || password === "") {
-                    alert("Please fill out all required fields.");
+                if (empName === "" || email === "" || password === "" || isNaN(phoneNumber)) {
+                    alert("Please fill out all required fields correctly.");
+                    return false;
+                }
+                if (phoneNumber.length !== 10 || isNaN(phoneNumber)) {
+                    alert("Phone number should be 10 digits.");
                     return false;
                 }
 
